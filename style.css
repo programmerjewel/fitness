@@ -60,7 +60,7 @@ h4 {
   font-family: inherit;
   color: rgb(253, 253, 253);
   font-size: 1.115rem;
-  padding: 0.875rem 1.25rem;
+  padding: 1rem 2.5rem;
   border-radius: 1.875rem;
   background-color: rgb(230, 83, 60);
 }
@@ -83,7 +83,6 @@ h4 {
 header {
 }
 nav {
-  background-color: #222;
   padding: 1.5rem 0;
 }
 nav .container {
@@ -128,8 +127,11 @@ nav a:hover {
     display: initial;
   }
 }
+
+
 /* hero css */
 .hero-sec {
+    padding: 2rem 0;
 }
 .hero-sec .container {
   gap: 3rem;
@@ -137,9 +139,13 @@ nav a:hover {
 .hero-sec .content {
   width: 40%;
 }
+.hero-sec .content span{
+    font-family: 'Ephesis', cursive;
+    font-size: 6.5rem;
+}
 .hero-sec .btns {
   display: flex;
-  gap: 2rem;
+  justify-content: space-between;
 
   margin-top: 1.75rem;
 }
@@ -158,7 +164,7 @@ nav a:hover {
   gap: 0.5rem;
   text-align: center;
   padding: 1rem;
-  border-radius: 12px;
+  border-radius: 1rem;
   backdrop-filter: blur(20px);
   background: rgba(255, 255, 255, 0.1);
 }
@@ -187,6 +193,20 @@ nav a:hover {
   font-weight: 300;
 }
 
+/* header css media query */
+@media screen and (max-width: 575px) {  
+    .hero-sec .content {
+        width: 100%;
+      }
+      .hero-sec .content span{
+        font-size: 3.5rem;
+      }
+      .hero-sec .btns {
+        justify-content: space-evenly;
+        gap: 0.5rem;
+      }
+}
+
 /* change css */
 .change-sec {
   padding: 3rem 0;
@@ -195,6 +215,7 @@ nav a:hover {
   margin-top: 2.5rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
 }
 .change-sec .box {
   text-align: center;
@@ -207,6 +228,16 @@ nav a:hover {
   padding: 1.25rem 0;
 }
 .change-sec .box p {
+}
+
+/* change media query */
+@media screen and (max-width: 575px) {
+    .change-sec .box p {
+        margin: 0 15%;
+    }
+    .change-sec .imgs {
+        grid-template-columns: 1fr;
+      }
 }
 
 /* run css */
@@ -240,6 +271,13 @@ nav a:hover {
     width: 50%;
 }
 
+/* bmi media query  */
+
+@media screen and (max-width: 575px) {
+    .bmi-sec .container{
+        width: 80%;
+    }
+}
 
 /* chart css */
 .chart-sec{
@@ -295,13 +333,28 @@ td{
     margin-top: 1.5rem;
 }
 
+/* chart media query  */
+
+@media screen and (max-width: 575px) {
+    
+    .chart-sec .container{
+        gap: 2rem;
+    }
+    .t-container{
+        width: 100%;
+    }
+    table{
+        width: 100%;
+    }
+
+}
+
+
 /* package css */
 .package-sec{
     padding: 3rem 0;
 }
 .package-sec .content{
-    display: flex;
-    justify-content: space-between;
     gap: 5rem;
 }
 .package-sec .content .img{
@@ -315,8 +368,7 @@ td{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) ;
 }
 .card{
-    backdrop-filter: blur(20px);
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(182, 182, 182, 0.1);
     padding: 3rem 2rem;
     border-radius: 0.5rem;
 }
@@ -341,7 +393,17 @@ td{
 
 }
 .card .btn{
-    margin-top: 2.5rem;
+    margin-top: 2rem;
+}
+
+
+/* card media query */
+
+@media screen and (max-width: 575px) {
+    .card{
+        padding: 1.5rem 2rem;
+        margin: 0 2.5rem;
+    }
 }
 
 /* team css */
@@ -360,7 +422,7 @@ td{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 1fr;
-    gap: 1.125rem;
+    gap: 1.5rem;
 }
 .team-img .box{
     border-radius: 1.25rem;
@@ -385,6 +447,15 @@ td{
     left: 5%;
     color: rgba(255, 255, 255, 0.5);
     font-size: 1rem;
+}
+
+@media  screen and (max-width: 575px) {
+    .team-img{
+        grid-template-columns: 1fr;
+    }
+    .team-img span{
+        top: 87%;
+    }
 }
 
 /* footer css */
@@ -440,7 +511,22 @@ hr{
 }
 
 
-/* media query */
+
+/* footer css media query */
+@media screen and (max-width: 575px){
+    .f-menu{
+        width: 100%;
+    }
+    footer .container{
+        gap: 1.25rem;
+    }
+}
+
+
+
+
+/* hero css media query */
+/* hero css media query */
 @media screen and (max-width: 575px) {
   .container {
     width: 90%;
@@ -453,20 +539,9 @@ hr{
   }
   .btn {
     font-size: 1rem;
-    padding: 0.875rem;
   }
-  .hero-sec .content {
-    width: 100%;
-  }
-  .hero-sec .btns {
-    justify-content: space-evenly;
-    gap: 0.5rem;
-  }
+  
   .h4 {
     font-size: 1.125rem;
-  }
-
-  .change-sec .imgs {
-    grid-template-columns: 1fr;
   }
 }
