@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 a {
   text-decoration: none;
 }
@@ -539,6 +542,7 @@ hr{
   }
   .btn {
     font-size: 1rem;
+    padding: 0.875rem;
   }
   
   .h4 {
