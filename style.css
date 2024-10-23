@@ -83,8 +83,30 @@ h4 {
 .text-center {
   text-align: center;
 }
-header {
+
+@media screen and (max-width: 575px) {
+  .container {
+    width: 90%;
+  }
+  .flex {
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .btn {
+    font-size: 0.875rem;
+    padding: 1rem;
+  }
+  
+  .h4 {
+    font-size: 1.125rem;
+  }
 }
+
+
+
+/* header css */
 nav {
   padding: 1.5rem 0;
 }
@@ -122,6 +144,8 @@ nav a:hover {
 .mobile-nav {
   display: none;
 }
+
+/* header media query */
 @media screen and (max-width: 575px) {
   nav ul {
     display: none;
@@ -182,9 +206,6 @@ nav a:hover {
   top: 75%;
   left: -6%;
 }
-.hero-sec .box img {
-  fill: whitesmoke;
-}
 .h4 {
   font-size: 1.5rem;
   font-weight: 900;
@@ -207,6 +228,12 @@ nav a:hover {
       .hero-sec .btns {
         justify-content: space-evenly;
         gap: 0.5rem;
+      }
+      .workout{
+        right: -3%;
+      }
+      .video{
+        left: -3%;
       }
 }
 
@@ -525,27 +552,3 @@ hr{
     }
 }
 
-
-
-
-/* hero css media query */
-/* hero css media query */
-@media screen and (max-width: 575px) {
-  .container {
-    width: 90%;
-  }
-  .flex {
-    flex-direction: column;
-  }
-  h1 {
-    font-size: 2rem;
-  }
-  .btn {
-    font-size: 0.875rem;
-    padding: 1rem;
-  }
-  
-  .h4 {
-    font-size: 1.125rem;
-  }
-}
