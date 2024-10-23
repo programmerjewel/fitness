@@ -257,8 +257,6 @@ nav a:hover {
 .change-sec .box h4 {
   padding: 1.25rem 0;
 }
-.change-sec .box p {
-}
 
 /* change media query */
 @media screen and (max-width: 575px) {
@@ -280,16 +278,12 @@ nav a:hover {
   padding: 2.5rem;
   gap: 4rem;
 }
-.run-sec .content {
-}
 .run-sec .img {
   border-radius: 1rem;
   overflow: hidden;
 }
 .run-sec button {
   margin-top: 2rem;
-}
-.run-sec .content {
 }
 
 /* bmi- css */
@@ -339,7 +333,6 @@ td{
     font-size: 0.875rem;
 }
 
-.i-h3{}
 .i-p{
     margin-top: 1.25rem;
 }
@@ -440,7 +433,6 @@ td{
 .team-sec{
     padding: 3rem 0;
 }
-.team-sec .container{}
 .team-sec .content{
     text-align: center;
 }
@@ -509,7 +501,6 @@ footer .container{
 .f-menu{
     width: 30%;
 }
-.f-menu li{}
 .f-bold{
     display: inline-block;
     font-size: 1.25rem;
